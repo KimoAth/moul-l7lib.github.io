@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOUL-L7LIB</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a38e2c92f1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="PICTURE.png">
+    <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <script async src='https://stackwhats.com/pixel/bf94c4f5ea7e0198f128ca3ef5edab'></script> -->
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+    <!--<link rel="stylesheet" href="css/stylesecours.css">-->
+
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="PICTURE.png" alt="">
+        </a>
+    
+        <!-- <nav class="navbar" onclick="chercher();">
+            <a href="#size"><div>NosProduits</div></a>
+        </nav> -->
+        
+        <div class="share">
+            <!-- <i class="fa-solid fa-bars fa-3x" ></i>  -->
+            <a id="fb" href="#" class="fab fa-facebook-f"></a>
+            <a id="wts" href="#" class="fab fa-whatsapp"></a>
+            <a id="insta" href="#" class="fab fa-instagram"></a>
+        </div>
+<!-- 
+        <div class="icons">
+             <div class="fas fa-search" id="search-btn"></div> -->
+            <!--<div class="fas fa-shopping-cart" id="cart-btn"></div>-->
+            <!-- <div class="fas fa-bars" id="menu-btn"></div> 
+        </div> -->
+        <span class="wpml-ls-native icl_lang_sel_native" lang="ar" id="lang"><a href="indexar.html">ع</a></span>
+        <div class="search-form"  onclick="chercher();">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+    </header>
+    <section class="picture">
+        <div class="pict">
+            <!--<img class="image" src="firstpic.jpeg" alt="">-->
+            <img class="image" src="bghead1.jpeg" alt="">
+        </div>
+    </section>
+    <section class="description">
+        <div class="descr">
+            <p>Livraison gratuite tal bab dar (Commande minimum 40 Dhs)</p>
+        </div>
+        <div class="us">
+            <h3>Lait 100% Beldy Marocain  </h3>
+            <p >Notre lait est 100% naturel sans conservateurs, extrait du lait de vache, que nous collectons chaque jour dans nos villages sélectionnés.... 
+                Et c’est ainsi que nous travaillons sur le lait, car votre santé est la chose la plus importante pour nous.</p>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <aside class="aside">
+            <a href="#"><div class="fas fa-shopping-cart fa-4x" id="cart-btn"><span>0</span></div></a>
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-8e027d89-acd1-423d-bbaa-a9319eae3679"></div>   
+            <!-- <script src="https://apps.elfsight.com/p/platform.js" defer  style="max-width: 600px;"></script>
+            <div class="elfsight-app-8e027d89-acd1-423d-bbaa-a9319eae3679"></div> -->
+        </aside>
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <!--<span class="fas fa-times"></span>-->
+                <img class="pic1" src="milk.jpeg" alt="">
+                <!-- <div class="content">
+                    <h3>cart item 01</h3>
+                    <div class="price">$15.99/-</div>
+                </div> -->
+                <div id="cont" class="content1">
+                    <h3>Hlib Beldy </h3>
+                    <select name="milk" id="milk" onclick="getClientSize()">
+                        <optgroup label="SIZES">
+                            <option id="size" value="sizes" active>sizes</option>
+                            <option id="size" value="1L">1L</option>
+                            <option id="size" value="2L">2L</option>
+                            <option id="size" value="3L">3L</option>
+                            <option id="size" value="4L">4L</option>
+                            <option id="size" value="5L">5L</option>
+                        </optgroup>
+                    </select>
+                    <div id="msg"></div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <!--<span class="fas fa-times"></span>-->
+                <img class="pic2" src="lben.jpeg" alt="">
+                <!-- <div class="content">
+                    <h3>cart item 02</h3>
+                    <div class="price">$15.99/-</div>
+                </div> -->
+                <div id="cont" class="content2">
+                    <h3>Lben Beldy </h3>
+                    <select name="lben" id="lben" onclick="getClientSize()">
+                        <optgroup label="SIZES">
+                            <option value="sizes" active>sizes</option>
+                            <option value="1L">1L</option>
+                            <option value="2L">2L</option>
+                            <option value="3L">3L</option>
+                            <option value="4L">4L</option>
+                            <option value="5L">5L</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="cart-item">
+                <!--<span class="fas fa-times"></span>-->
+                <img class="pic3" src="rayeb.jpeg" alt="">
+                <!-- <div class="content">
+                    <h3>cart item 03</h3>
+                    <div class="price">$15.99/-</div>
+                </div> -->
+                <div id="cont" class="content3">
+                    <h3>Rayeb Beldy </h3>
+                    <select name="rayeb" id="rayeb" onclick="getClientSize()">
+                        <optgroup label="SIZES">
+                            <option value="sizes" active>sizes</option>
+                            <option value="1L">1L</option>
+                            <option value="2L">2L</option>
+                            <option value="3L">3L</option>
+                            <option value="4L">4L</option>
+                            <option value="5L">5L</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="cart-item">
+                <!--<span class="fas fa-times"></span>-->
+                <img class="pic4" src="zebda.jpg" alt="">
+                <!-- <div class="content">
+                    <h3>cart item 04</h3>
+                    <div class="price">$15.99/-</div>
+                </div> -->
+                <div id="cont" class="content4">
+                    <h3>Zebda Beldiya </h3>
+                    <select name="zebda" id="zebda" onclick="getClientSize()">
+                        <optgroup label="SIZES">
+                            <option value="sizes" active>sizes</option>
+                            <option value="150g">150g</option>
+                            <option value="250g">250g</option>
+                            <option value="500g">500g</option>
+                            <option value="1kg">1kg</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="cart-item">
+                <!--<span class="fas fa-times"></span>-->
+                <img class="pic5" src="jben.jpeg" alt="">
+                <!-- <div class="content">
+                    <h3>cart item 03</h3>
+                    <div class="price">$15.99/-</div>
+                </div> -->
+                <div id="cont" class="content5">
+                    <h3>Jben Beldy </h3>
+                    <select name="jben" id="jben">
+                        <optgroup label="SIZES">
+                            <option value="sizes" active>sizes</option>
+                            <option value="150g">150g</option>
+                            <option value="250g">250g</option>
+                            <option value="500g">500g</option>
+                            <option value="1kg">1kg</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="cart-item">
+                <!--<span class="fas fa-times"></span>-->
+                <img class="pic6" src="smen.jpeg" alt="">
+                <!-- <div class="content">
+                    <h3>cart item 03</h3>
+                    <div class="price">$15.99/-</div>
+                </div> -->
+                <div id="cont" class="content6">
+                    <h3>Smen Beldy </h3>
+                    <select name="smen" id="smen">
+                        <optgroup label="SIZES">
+                            <option value="sizes" active>sizes</option>
+                            <option value="150g">150g</option>
+                            <option value="250g">250g</option>
+                            <option value="500g">500g</option>
+                            <option value="1kg">1kg</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <!--<a href="#" class="btn">checkout now</a>-->
+        </div>
+    </section>
+    <!-- <script src="script.js"></script> -->
+    <!-- <footer class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-whatsapp"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+         <a href="#" id="wtsp" ><i class="fa-brands fa-whatsapp"></i></a> 
+
+        <div class="links">
+            <a href="#">contact</a>
+        </div>
+    </footer> -->
+</body>
+</html>
